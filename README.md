@@ -1,14 +1,14 @@
-# Luke's dmenu
+# Lukes dmenu
 
-Extra stuff added to vanilla dmenu:
+Zusätzliche Funktionen zu dem normalen dmenu:
 
-- reads Xresources (ergo pywal compatible)
-- alpha patch, which importantly allows this build to be embedded in transparent st
-- can view color characters like emoji
-- `-P` for password mode: hide user input
-- `-r` to reject non-matching input
-- dmenu options are mouse clickable
+- liest Xresources (daher pywal-kompatibel)
+- Alpha-Patch, der es ermöglicht, diese Version in einem transparenten st einzubetten
+- kann Farbzeichen wie Emojis anzeigen
+- -P für den Passwortmodus: versteckt die Benutzereingabe
+- -r um nicht passende Eingaben abzulehnen
+- dmenu-Optionen sind mit der Maus anklickbar
 
-## Installation
+##Installation
 
-After making any config changes that you want, but `make`, `sudo make install` it.
+Nachdem du alle gewünschten Konfigurationsänderungen vorgenommen hast, führe `make` und `sudo make install` aus.
