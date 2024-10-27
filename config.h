@@ -1,34 +1,38 @@
-/* See LICENSE file for copyright and license details. */
-/* Default settings; can be overriden by command line. */
+/* Siehe LICENSE-Datei für Copyright- und Lizenzdetails. */
+/* Standardeinstellungen; können durch Kommandozeilenoptionen überschrieben werden. */
+/* SARBS 27.10.2024 */
 
-static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
-/* -fn option overrides fonts[0]; default X11 font or font set */
+static int topbar = 1;                      /* -b Option; wenn 0, erscheint dmenu am unteren Bildschirmrand */
+/* -fn Option überschreibt fonts[0]; Standard X11-Schriftart oder Schriftsatz */
+
 static const char *fonts[] = {
-	"monospace:size=10",
-	"NotoColorEmoji:pixelsize=8:antialias=true:autohint=true"
+    "monospace:pixelsize=14",
+    "Symbols Nerd Font:pixelsize=14:antialias=true:autohint=true",
+    "NotoColorEmoji:pixelsize=14:antialias=true:autohint=true",
+    "Noto Sans:pixelsize=14:antialias=true:autohint=true",
+    "DejaVu Sans:pixelsize=14:antialias=true:autohint=true",
+    "Font Awesome 12 Free Solid:pixelsize=14:antialias=true:autohint=true"
 };
-static const unsigned int bgalpha = 0xe0;
-static const unsigned int fgalpha = OPAQUE;
-static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+static const unsigned int bgalpha = 0xe0;   /* Hintergrund-Alpha (Transparenz) */
+static const unsigned int fgalpha = OPAQUE; /* Vordergrund-Alpha (undurchsichtig) */
+static const char *prompt      = NULL;      /* -p Option; Eingabeaufforderung links vom Eingabefeld */
 static const char *colors[SchemeLast][2] = {
-	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
-	[SchemeOut] = { "#000000", "#00ffff" },
+    /*     Vordergrund  Hintergrund */
+    [SchemeNorm] = { "#bbbbbb", "#222222" }, /* Normale Einträge */
+    [SchemeSel] = { "#eeeeee", "#005577" },  /* Ausgewählter Eintrag */
+    [SchemeOut] = { "#000000", "#00ffff" },  /* Ausgabe-Schema */
 };
 static const unsigned int alphas[SchemeLast][2] = {
-	/*		fgalpha		bgalphga	*/
-	[SchemeNorm] = { fgalpha, bgalpha },
-	[SchemeSel] = { fgalpha, bgalpha },
-	[SchemeOut] = { fgalpha, bgalpha },
+    /*      Vordergrund-Alpha  Hintergrund-Alpha */
+    [SchemeNorm] = { fgalpha, bgalpha },
+    [SchemeSel] = { fgalpha, bgalpha },
+    [SchemeOut] = { fgalpha, bgalpha },
 };
-
-/* -l option; if nonzero, dmenu uses vertical list with given number of lines */
+/* -l Option; wenn nicht Null, verwendet dmenu eine vertikale Liste mit der angegebenen Zeilenzahl */
 static unsigned int lines      = 0;
-
 /*
- * Characters not considered part of a word while deleting words
- * for example: " /?\"&[]"
+ * Zeichen, die beim Löschen von Wörtern nicht als Teil eines Wortes betrachtet werden
+ * zum Beispiel: " /?\"&[]"
  */
 static const char worddelimiters[] = " ";
 
