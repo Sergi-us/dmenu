@@ -6,12 +6,9 @@ static int topbar = 1;                      /* -b Option; wenn 0, erscheint dmen
 /* -fn Option überschreibt fonts[0]; Standard X11-Schriftart oder Schriftsatz */
 
 static const char *fonts[] = {
-    "monospace:pixelsize=14",
-    "Symbols Nerd Font:pixelsize=14:antialias=true:autohint=true",
-    "NotoColorEmoji:pixelsize=14:antialias=true:autohint=true",
-    "Noto Sans:pixelsize=14:antialias=true:autohint=true",
-    "DejaVu Sans:pixelsize=14:antialias=true:autohint=true",
-    "Font Awesome 12 Free Solid:pixelsize=14:antialias=true:autohint=true"
+    "JetBrains Mono Nerd Font:style=Thin:pixelsize=14:antialias=true:autohint=true",
+    "Inter:pixelsize=14:antialias=true:autohint=true",
+    "OpenMoji:pixelsize=16:antialias=true:autohint=true",
 };
 static const unsigned int bgalpha = 0xe0;   /* Hintergrund-Alpha (Transparenz) */
 static const unsigned int fgalpha = OPAQUE; /* Vordergrund-Alpha (undurchsichtig) */
