@@ -1,6 +1,7 @@
 /* Siehe LICENSE-Datei für Copyright- und Lizenzdetails. */
 /* Standardeinstellungen; können durch Kommandozeilenoptionen überschrieben werden. */
 /* SARBS 27.10.2024 */
+/* ~/.local/src/dmenu/config.h */
 
 static int topbar = 1;                      /* -b Option; wenn 0, erscheint dmenu am unteren Bildschirmrand */
 /* -fn Option überschreibt fonts[0]; Standard X11-Schriftart oder Schriftsatz */
