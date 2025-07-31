@@ -1,6 +1,3 @@
-dmenu
-dmenu
-dmenu
 dmenu.o
 drw.o
 stest
@@ -8,9 +5,4 @@ stest.o
 util.o
 dmenu
 util.o
-stest.o
-stest
 drw.o
-dmenu.o
-dmenu
-dmenu
