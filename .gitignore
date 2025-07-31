@@ -6,3 +6,11 @@ drw.o
 stest
 stest.o
 util.o
+dmenu
+util.o
+stest.o
+stest
+drw.o
+dmenu.o
+dmenu
+dmenu
