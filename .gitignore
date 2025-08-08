@@ -6,3 +6,8 @@ util.o
 dmenu
 util.o
 drw.o
+dmenu
+dmenu.o
+stest
+stest.o
+util.o
