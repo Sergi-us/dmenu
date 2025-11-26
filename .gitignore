@@ -1,14 +1,4 @@
 AGENTS.md
-dmenu.o
-drw.o
-stest
-stest.o
-util.o
+*.o
 dmenu
-util.o
-drw.o
-dmenu
-dmenu.o
 stest
-stest.o
-util.o

@@ -1,14 +1,20 @@
-# Lukes dmenu
+# dmenu - dynamic menu
 
-Zusätzliche Funktionen zu dem normalen dmenu:
+Suckless Application Launcher mit zusätzlichen Features:
 
-- liest Xresources (daher pywal-kompatibel)
-- Alpha-Patch, der es ermöglicht, diese Version in einem transparenten st einzubetten
-- kann Farbzeichen wie Emojis anzeigen
-- -P für den Passwortmodus: versteckt die Benutzereingabe
-- -r um nicht passende Eingaben abzulehnen
-- dmenu-Optionen sind mit der Maus anklickbar
+- Xresources-Support (pywal-kompatibel)
+- Alpha-Patch für Transparenz (funktioniert mit st)
+- Emoji-Darstellung
+- Passwortmodus (`-P`): versteckt Eingabe
+- Eingabe-Validierung (`-r`): lehnt nicht passende Eingaben ab
+- Mausklick-Support
 
-##Installation
+## Installation
 
-Nachdem du alle gewünschten Konfigurationsänderungen vorgenommen hast, führe `make` und `sudo make install` aus.
+```bash
+git clone https://codeberg.org/Sergius/dmenu.git
+cd dmenu
+sudo make install
+```
+
+Teil von [SARBS](https://codeberg.org/Sergius/SARBS.git).
